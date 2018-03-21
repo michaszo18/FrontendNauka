@@ -1,0 +1,13 @@
+Relative. Można zmieniać położenie właściwościami top, right, bottom, left, 
+lub transform: translateX(20px)
+
+Absolute. Element wciągany jest z prządku na stronie. Pozycjonowanie bottom:0; 
+ustawia go na dole strony. Pozycjonowanie względem viewPotu?
+Jeżeli ustawimy bottom:0; right:0; div będzie na dole. Jeżeli dopiszemy do container
+position: relative; będzie w dolnym rogu diva. Jeżeli ustawimy width:100%;
+będzie miał 100% szerokości rodzica (zobacz z-index)
+
+Fixed- położenie względem przeglądarki. Top:0 left:0 przy crollu trzyma się krawędzi
+jeżeli w rodzicu jest relative (do menu)
+
+Sticky. Elemtent jest w układzie, ale jak zaczniemy scrolorwać pojdzie z nami. 
