@@ -1,0 +1,89 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #262626;
+    color: #fff;
+}
+section
+{
+    background: #fff;
+    margin: 150px 0;
+}
+.imgBox
+{
+    position: relative;
+    margin: 40px auto;
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 300px;
+}
+.imgBox h3
+{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: -24px;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+}
+.imgBox:hover h3
+{
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+}
+.imgBox ul
+{
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    background: rgba(0, 0, 0, .2);
+    transform: translateY(50px);
+    transition: .5s;
+}
+.imgBox:hover ul
+{
+    transform: translateY(-60px);
+}
+.imgBox ul li 
+{
+    list-style: none;
+    width: 20%;
+    box-sizing: border-box;
+}
+.imgBox ul li a
+{
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+    display: inline-block;
+}
+.imgBox ul li:hover:nth-child(1)
+{
+    background: #0077B5;
+}
+.imgBox ul li:hover:nth-child(2)
+{
+    background: #e4405f;
+}
+.imgBox ul li:hover:nth-child(3)
+{
+    background: #55acee;
+}
+.imgBox ul li:hover:nth-child(4)
+{
+    background: #3b5999;
+}
+.imgBox ul li:hover:nth-child(5)
+{
+    background: #cd201f;
+}
