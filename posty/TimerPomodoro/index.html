@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Timer Pomodoro</title>
+    <title>Timer</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-
 </head>
 <body>
     <div class="container">
         <div class="timer">
-            10:00
+            <div class="session">
+                    <div class="settings">  
+                        <h1>Popracujemy?</h1>
+                        <form id="inf">
+                            <label for="sessions">Ilość sesji: <br> </label>
+                            <input type="number" name="sessions" id="sessions" value="3"> <br>
+                            <label for="sessions">Czas pracy [min]: <br> </label>
+                            <input type="number" name="work" id="work" value="2"> <br>
+                            <label for="sessions">Czas przerwy [min]: <br> </label>
+                            <input type="number" name="break" id="break" value="1"> <br>
+                            <input type="button" value="Do roboty" onclick="start()">
+                        </form>
+                    </div>
+                    <div class="time">
+                        <h1 id="type">Praca/Przerwa</h1> 
+                        <h1 id="num">0:00</h1>
+                        <h2 id="sessions">Pozostało sesji: </h2>
+                        <h2 id="work">Czas pracy: </h2>
+                        <h2 id="break">Czas przerwy: </h2>
+                    </div>
+                </div>
+            </div>
         </div>
-        <button onclick="myVar = setTimeout(myFunction, 3000)" >Start</button>
-
-        <div class="progressbar"></div>
-    </div>
-
-
-    <script>
-        var myVar = setInterval(myTimer, 1000);
-
-        function myTimer() {
-            var d = new Date();
-            document.getElementById("demo").innerHTML = d.toLocaleTimeString();
-        }
-
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
