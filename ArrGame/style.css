@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(9, 9, 24);
+    color: rgb(193, 196, 199);
+    font-size: 18px;
+    
+}
+
+header {
+    text-align: center;
+    background-color: rgb(9, 9, 19);
+}
+
+header h1 {
+    margin: 1rem;
+}
+
+main {
+    margin: 3rem 2rem;
+    
+}
+
+.game {
+    height: 6rem;
+}
+
+.car, .btn, .disabled {
+    background-color: rgb(193, 196, 199);
+    color: rgb(9, 9, 19);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: .5rem 4rem;
+    margin: 1rem 1rem;
+    border-radius: 2rem 1rem;
+    cursor: pointer;
+}
+
+.car:hover, .btn:hover {
+    background-color: rgb(165, 167, 170);
+}
+
+.btn {
+    margin: 2rem;
+}
+
+.chosen {
+    background-color: rgb(124, 125, 128);
+    border: .2rem rgb(250, 200, 50) solid;
+}
+
+.disabled {
+    background-color: aqua;
+}
+.disabled:hover {
+    background-color: aqua;
+}
